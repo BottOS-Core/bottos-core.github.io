@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-theme="aurora">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bott: the AI assistant for your Windows PC</title>
+<meta name="description" content="Bott is an AI assistant that lives on your Windows PC. It writes, researches, handles your Gmail and calendar, makes calls through your phone and opens your apps, in English, Hindi and 30+ more languages.">
+<meta property="og:title" content="Bott: the AI assistant for your Windows PC">
+<meta property="og:description" content="Just tell your PC what you need. Free to start.">
+<meta property="og:image" content="film-poster.jpg">
+<link rel="icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="icon.svg" alt="">Bott</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#features">What it does</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="https://github.com/BottOS-Core/bott-releases/releases/latest">Download</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Just tell your PC what you need.</h1>
+        <p class="lede">Bott is an AI assistant that lives on your Windows PC. It writes and researches, handles your Gmail and calendar, makes calls through your phone and opens your apps, in English, Hindi and 30+ more languages.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://github.com/BottOS-Core/bott-releases/releases/latest">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zM11.5 4.3 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></svg>
+            Download for Windows
+          </a>
+          <a class="btn quiet" href="#film">Watch the film</a>
+        </div>
+        <ul class="facts">
+          <li>Free to start</li>
+          <li>Windows 10 and 11</li>
+          <li>Your data stays on your PC</li>
+        </ul>
+      </div>
+
+      <div class="stage" aria-label="Bott answering example requests">
+        <svg class="face" id="face" viewBox="0 0 128 128" role="img" aria-label="Bott">
+          <defs>
+            <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13203a"/><stop offset="1" stop-color="#05080f"/></linearGradient>
+            <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb2ff" stop-opacity=".55"/><stop offset="1" stop-color="#3b6fd0" stop-opacity=".2"/></linearGradient>
+            <radialGradient id="bloom" cx="50%" cy="50%" r="55%"><stop offset="0" stop-color="#4f8cff" stop-opacity=".3"/><stop offset="1" stop-color="#4f8cff" stop-opacity="0"/></radialGradient>
+            <linearGradient id="head" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12294f"/><stop offset="1" stop-color="#050c1b"/></linearGradient>
+            <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9bd0ff"/><stop offset="1" stop-color="#2f6fe0"/></linearGradient>
+            <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="halo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+          </defs>
+          <rect x="3" y="3" width="122" height="122" rx="30" fill="url(#tile)" stroke="url(#edge)" stroke-width="2"/>
+          <rect x="3" y="3" width="122" height="122" rx="30" fill="url(#bloom)"/>
+          <svg x="24.93" y="23" width="78.14" height="84" viewBox="0 0 160 172" overflow="visible">
+            <line x1="80" y1="14" x2="80" y2="40" stroke="#8cc4ff" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="80" cy="11" r="6.5" fill="#cfe8ff" filter="url(#glow)"/>
+            <rect x="14" y="42" width="132" height="118" rx="38" fill="none" stroke="#3b82f6" stroke-opacity=".55" stroke-width="6" filter="url(#halo)"/>
+            <rect x="14" y="42" width="132" height="118" rx="38" fill="url(#head)" stroke="url(#rim)" stroke-width="3.4"/>
+            <g class="eyes" id="eyes"><g class="lids" id="lids">
+              <circle cx="54" cy="94" r="8.5" fill="#eaf6ff" filter="url(#glow)"/>
+              <circle cx="106" cy="94" r="8.5" fill="#eaf6ff" filter="url(#glow)"/>
+            </g></g>
+            <rect x="73" y="122" width="14" height="3.4" fill="#a9d3ff" rx="1.7"/>
+          </svg>
+        </svg>
+
+        <div class="bubble" aria-live="polite">
+          <div class="ask"><span id="ask">Research battery storage and make me a 10-slide deck</span></div>
+          <div class="reply"><img src="icon.svg" alt=""><span><span id="reply">Done. I used 4 sources and saved the deck to Documents\Bott.</span><span class="caret" id="caret"></span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="film" id="film">
+    <div class="wrap">
+      <div class="film-frame">
+        <video src="bott-film.mp4" poster="film-poster.jpg" controls preload="none" playsinline aria-label="Bott launch film"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Less busywork. More done.</h2>
+        <p class="lede">Ask the way you'd ask a person. Bott works across your files, your Google account, your phone and your apps, and checks with you before anything risky.</p>
+      </div>
+
+      <article class="feature">
+        <div class="copy">
+          <h3>From a question to a finished deck</h3>
+          <p>Bott searches the web, reads what it finds, and turns it into a document, a report or a presentation with sources. You get a file you can open, not a wall of text.</p>
+          <ul class="examples"><li>Summarise this PDF</li><li>Write a report on…</li><li>Make slides from my notes</li></ul>
+        </div>
+        <div class="mock" aria-hidden="true">
+          <div class="mock-top"><img src="icon.svg" alt="">Bott is working on your deck</div>
+          <div class="row"><span class="dot">✓</span>Researching sources<span class="meta">4 found</span></div>
+          <div class="row"><span class="dot">✓</span>Organizing findings<span class="meta">5 key points</span></div>
+          <div class="row"><span class="dot">✓</span>Building the presentation<span class="meta">10 slides</span></div>
+          <div class="slides"><div class="slide"><i></i><i></i><i style="width:60%"></i></div><div class="slide"><i></i><b></b></div><div class="slide"><i></i><i></i><i></i><i style="width:45%"></i></div></div>
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="copy">
+          <h3>Gmail, Calendar and Drive from one sign-in</h3>
+          <p>Continue with Google once and Bott connects your inbox, calendar and files on the same Google page. Ask what's on tomorrow, reply to an email, or find that file from last week.</p>
+          <ul class="examples"><li>What's on my calendar tomorrow?</li><li>Reply to Rahul's email</li><li>Find my resume in Drive</li></ul>
+        </div>
+        <div class="mock" aria-hidden="true">
+          <div class="mock-top"><img src="icon.svg" alt="">Connected with your Google account</div>
+          <div class="google">
+            <div class="gtile"><strong>Gmail</strong><span>Connected</span></div>
+            <div class="gtile"><strong>Calendar</strong><span>Connected</span></div>
+            <div class="gtile"><strong>Drive</strong><span>Connected</span></div>
+          </div>
+          <div class="row" style="margin-top:12px"><span class="dot">10</span>Team sync<span class="meta">Tomorrow, 10:00</span></div>
+          <div class="row"><span class="dot">@</span>Invoice for October<span class="meta">Unread</span></div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="copy">
+          <h3>Calls from your PC</h3>
+          <p>Link your phone once with Microsoft Phone Link. Then say “call Mom”, and answer or decline incoming calls from Bott or just by saying so.</p>
+          <ul class="examples"><li>Call Mom</li><li>Answer</li><li>Remind me to call back at 6</li></ul>
+        </div>
+        <div class="mock" aria-hidden="true">
+          <div class="mock-top"><img src="icon.svg" alt="">Calling through your phone</div>
+          <div class="callcard">
+            <div class="avatar">M</div>
+            <strong style="font-family:var(--display);font-size:20px">Mom</strong>
+            <span style="color:var(--muted)">00:42</span>
+            <div class="callbtns"><span>🎙️</span><span>🔢</span><span class="end">📞</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="copy">
+          <h3>Make things, free</h3>
+          <p>Ask for a YouTube thumbnail, a short cartoon, an intro, background music or a simple game, and Bott makes it right in the chat, ready to download.</p>
+          <ul class="examples"><li>Thumbnail for my gaming video</li><li>A 30-second cartoon</li><li>Lo-fi beat for studying</li></ul>
+        </div>
+        <div class="mock" aria-hidden="true">
+          <div class="mock-top"><img src="icon.svg" alt="">Made in Bott</div>
+          <div class="studio">
+            <div class="thumb"><strong>I SURVIVED 100 DAYS</strong><small>Part 2</small></div>
+            <div class="wave" id="wave"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Ready in three steps</h2>
+      </div>
+      <ol class="steps" style="list-style:none;padding:0;margin:0">
+        <li class="step"><span class="n">1</span><h3>Install Bott</h3><p>Download the installer and open it. It sets itself up in a minute.</p></li>
+        <li class="step"><span class="n">2</span><h3>Sign in</h3><p>Continue with Google to connect Gmail, Calendar and Drive in one go, or use your email.</p></li>
+        <li class="step"><span class="n">3</span><h3>Ask for anything</h3><p>Type or talk. Bott does the task and shows you the result, and asks before anything risky.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <div class="wrap">
+      <div class="section-head" style="margin:0">
+        <h2>Your stuff stays yours</h2>
+        <p class="lede">Bott runs on your PC, so your chats, files and account live there too. Here's what that means in practice.</p>
+        <p><a href="privacy.html">Read the full privacy policy</a></p>
+      </div>
+      <div class="promises">
+        <div class="promise"><strong>Stored on your PC</strong><span>Chats, files, memory, tasks and your account are kept on your own computer, not on a Bott server.</span></div>
+        <div class="promise"><strong>You approve risky actions</strong><span>Sending emails, deleting files, payments and shutting down always ask you first.</span></div>
+        <div class="promise"><strong>No ads, no selling</strong><span>Bott never sells your data, never shows ads, and doesn't use your Google data to train AI.</span></div>
+        <div class="promise"><strong>Leave whenever you like</strong><span>Export or delete your data from Settings. When you uninstall, you choose whether to keep it.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Start free. Upgrade if you use it every day.</h2>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3><p class="for">Everything you need to get started</p>
+          <div class="price">₹0</div>
+          <ul><li>Unlimited PC actions</li><li>200 messages a day, then unlimited Lite mode</li><li>20 Smart replies a day</li><li>30 images a month</li><li>2 custom agents</li><li>No ads, ever</li></ul>
+        </div>
+        <div class="plan main">
+          <h3>Bott Plus</h3><p class="for">For people who use Bott every day</p>
+          <div class="price">₹299 <small>/ month</small></div>
+          <p class="offer"><b>₹99 a month</b> for your first 3 months</p>
+          <ul><li>Everything in Free</li><li>Unlimited full-power messages</li><li>300 Smart replies a day</li><li>500 images a month</li><li>10 custom agents</li><li>Unlimited automations</li></ul>
+          <p class="later">₹2,499 a year, or ₹149 a month for students</p>
+        </div>
+        <div class="plan">
+          <h3>Business</h3><p class="for">For small teams and offices</p>
+          <div class="price">₹699 <small>/ user / month</small></div>
+          <ul><li>Everything in Plus, for every member</li><li>Shared workspace and team automations</li><li>Admin controls</li><li>Priority support</li></ul>
+          <p class="later">Coming soon. Minimum 3 users, 7-day free trial.</p>
+        </div>
+        <div class="plan">
+          <h3>Enterprise</h3><p class="for">For large organisations</p>
+          <div class="price" style="font-size:30px">Let's talk</div>
+          <ul><li>Custom limits</li><li>Private setup and data controls</li><li>Dedicated support and onboarding</li></ul>
+          <p class="later"><a href="mailto:bott.oscore@gmail.com">bott.oscore@gmail.com</a></p>
+        </div>
+      </div>
+      <p class="pay-note">Pay with any UPI app from inside Bott (Settings, then Plans). Prices in Indian rupees.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details><summary>Is Bott free?</summary><p>Yes. The Free plan has no time limit and needs no card. Bott Plus adds higher limits for people who use it all day.</p></details>
+        <details><summary>Which computers does it run on?</summary><p>Windows 10 and Windows 11 (64-bit). Mac and phone versions aren't available yet.</p></details>
+        <details><summary>Does Bott read my email?</summary><p>Only when you ask it to, for example “summarise my unread emails”. Your Google sign-in is stored on your PC, and you can disconnect Google anytime in Integrations or at myaccount.google.com/permissions.</p></details>
+        <details><summary>Which languages does it speak?</summary><p>Bott understands and replies in English, Hindi and 30+ other languages, by text and by voice. The app itself can be switched to 35 languages.</p></details>
+        <details><summary>Can it control my PC?</summary><p>Only when you give it a task: opening apps, finding files, changing settings and similar. Anything risky, like deleting files, sending messages or shutting down, asks you first.</p></details>
+        <details><summary>What do I need for phone calls?</summary><p>Microsoft Phone Link, which is free from the Microsoft Store, and your phone linked to it. Bott shows the setup steps on its Calls page until your phone is connected.</p></details>
+        <details><summary>How do I uninstall?</summary><p>From Windows Settings, then Apps. Bott asks whether to keep your data, so a reinstall can pick up where you left off.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img src="icon.svg" alt="">
+      <h2>Your desktop AI assistant</h2>
+      <p class="lede">Free to start. Takes a minute to install.</p>
+      <div class="hero-actions"><a class="btn" href="https://github.com/BottOS-Core/bott-releases/releases/latest">Download for Windows</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Bott</span>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+      <a href="mailto:bott.oscore@gmail.com">bott.oscore@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // music bars in the studio mock
+  const wave = document.getElementById("wave");
+  for (let i = 0; i < 26; i++) { const b = document.createElement("i"); b.style.height = (10 + Math.abs(Math.sin(i * 0.9) * 46) + (i % 3) * 6) + "px"; wave.appendChild(b); }
+
+  const face = document.getElementById("face"), eyes = document.getElementById("eyes"), lids = document.getElementById("lids");
+  if (!reduce) {
+    // Bott looks at your cursor
+    addEventListener("pointermove", (e) => {
+      const r = face.getBoundingClientRect();
+      const dx = (e.clientX - (r.left + r.width / 2)) / innerWidth, dy = (e.clientY - (r.top + r.height / 2)) / innerHeight;
+      eyes.style.transform = `translate(${Math.max(-1, Math.min(1, dx * 2)) * 9}px, ${Math.max(-1, Math.min(1, dy * 2)) * 7}px)`;
+    });
+    // and blinks now and then
+    const blink = () => { lids.animate([{ transform: "scaleY(1)" }, { transform: "scaleY(.1)" }, { transform: "scaleY(1)" }], { duration: 180 }); setTimeout(blink, 2500 + Math.random() * 3000); };
+    setTimeout(blink, 1800);
+  }
+
+  // real things people ask Bott
+  const talk = [
+    ["Research battery storage and make me a 10-slide deck", "Done. I used 4 sources and saved the deck to Documents\\Bott."],
+    ["What's on my calendar tomorrow?", "3 things. First up: Team sync at 10:00."],
+    ["Call Mom", "Calling Mom through your phone."],
+    ["Make a thumbnail for my gaming video", "Here it is, 1280×720 and ready to download."],
+    ["कल सुबह 7 बजे का रिमाइंडर लगाओ", "हो गया। कल सुबह 7:00 बजे याद दिला दूँगा।"],
+    ["Open Spotify and play something chill", "Playing a chill mix on Spotify."],
+  ];
+  if (reduce) return;
+  const ask = document.getElementById("ask"), reply = document.getElementById("reply");
+  let k = 0;
+  const type = (el, text, done) => { let i = 0; el.textContent = ""; const step = () => { el.textContent = text.slice(0, ++i); if (i < text.length) setTimeout(step, 22); else done(); }; step(); };
+  const next = () => { k = (k + 1) % talk.length; ask.textContent = talk[k][0]; reply.textContent = ""; setTimeout(() => type(reply, talk[k][1], () => setTimeout(next, 3200)), 650); };
+  setTimeout(next, 3600);
+})();
+</script>
+</body>
+</html>
